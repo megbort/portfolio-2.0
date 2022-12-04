@@ -1,0 +1,181 @@
+/*******************
+  Reset
+*******************/
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*******************
+  Design System
+*******************/
+$font-mono: "Overpass Mono", Helvetica, sans-serif;
+$font-serif: Overpass, Helvetica, sans-serif;
+$primary: #FF3358;
+$black: #050505;
+$white: #E8E8E8;
+$grey: #0F0F0F;
+
+@mixin button-primary {
+  font-family: $font-mono;
+  color: $white;
+  background: $primary;
+  border: 2px solid $primary;
+  padding: 5px 20px;
+  &:hover {
+    cursor: pointer;
+    color: $primary;
+    background: transparent;
+  }
+}
+
+body {
+  background: $black;
+  color: $white;
+  line-height: 1.5;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.socials {
+  ul {
+    display: flex;
+  }
+  li {
+    padding: 0 10px;
+  }
+  img {
+    width: 40px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  &.header {
+    height: 300px;
+  }
+  &.work {
+    height: 100%;
+    margin-bottom: 100px;
+  }
+}
+
+h1 {
+  font-family: $font-mono;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: $font-mono;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: $font-serif;
+  font-size: 22px;
+}
+
+h4 {
+  font-family: $font-mono;
+  font-size: 14px;
+}
+
+p {
+  font-family: $font-serif;
+}
+
+button {
+  @include button-primary;
+}
+
+footer {
+  background: $primary;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/*******************
+  Homepage
+*******************/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: $grey;
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 260px;
+  height: 280px;
+  margin: 12px;
+  &:hover {
+    box-shadow: 0px 0px 7px 2px rgba(255, 51, 88, 0.8);
+  }
+}
+
+/*******************
+  Project page
+*******************/
