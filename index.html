@@ -29,24 +29,52 @@
         <ul>
           <li>
             <a
-              ><img
-                src="assets/linkedin.svg"
+              href="https://www.linkedin.com/in/megankrenbrink-developer/"
+              target="_blank"
+              title="LinkedIn"
+            >
+              <svg
                 alt="linkedin_icon"
-                title="LinkedIn"
-            /></a>
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-linkedin"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                />
+              </svg>
+            </a>
           </li>
           <li>
-            <a
-              ><img src="assets/github.svg" alt="github_icon" title="Github"
-            /></a>
+            <a target="_blank" href="https://github.com/megbort" title="Github">
+              <svg
+                alt="github_icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-github"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                />
+              </svg>
+            </a>
           </li>
           <li>
-            <a
-              ><img
-                src="assets/envelope-circle.svg"
+            <a href="mailto:megan.krenn@gmail.com" title="E-mail">
+              <svg
                 alt="email_icon"
-                title="E-mail"
-            /></a>
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-envelope-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+                />
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -54,18 +82,16 @@
 
     <main>
       <!-- HEADER  -->
-      <section class="header">
-        <div>
+      <section class="header-section">
+        <div class="header">
           <h1>Megan Krenbrink</h1>
-          <h3 class="subheader">
-            Front-End Developer coding from Vancouver, Canada 🇨🇦
-          </h3>
+          <h3>Front-End Developer coding from Vancouver, Canada 🇨🇦</h3>
         </div>
       </section>
 
       <!-- WORK  -->
-      <section class="work">
-        <div>
+      <section class="work-section">
+        <div class="work">
           <h2>Check out some of my work ↓↓↓</h2>
           <p>
             <em>
@@ -74,65 +100,284 @@
             >
           </p>
           <div class="grid">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <!-- wearit  -->
+            <div class="card">
+              <img src="assets/wear-it-sample.png" alt="wearit_graphic" />
+              <div class="card-content">
+                <p><strong>WearIt Clothing</strong></p>
+                <p class="card-description">
+                  Website layout for an urban clothing company.
+                </p>
+                <div class="card-links">
+                  <a
+                    class="button"
+                    title="View Project"
+                    href="project-wearit.html"
+                    >View Project</a
+                  >
+                  <a
+                    class="link"
+                    title="Github Project"
+                    target="_blank"
+                    href="https://github.com/megbort/wearit"
+                    >GitHub<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-up-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- newsapp  -->
+            <div class="card">
+              <img src="assets/news-app-logo.jpg" alt="newsapp_graphic" />
+              <div class="card-content">
+                <p><strong>News App</strong></p>
+                <p class="card-description">
+                  An app built using React Native to give you the lastest news
+                </p>
+                <div class="card-links">
+                  <a
+                    class="button"
+                    title="View Project"
+                    href="project-news.html"
+                    >View Project</a
+                  >
+                  <a
+                    class="link"
+                    title="Github Project"
+                    target="_blank"
+                    href="https://github.com/megbort/news-app"
+                    >GitHub<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-up-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- mealsonmules  -->
+            <div class="card">
+              <img src="assets/mom-sample.jpg" alt="wearit_graphic" />
+              <div class="card-content">
+                <p><strong>Meals on Mules</strong></p>
+                <p class="card-description">
+                  RESTful API built for a grocery store chain.
+                </p>
+                <div class="card-links">
+                  <a
+                    class="button"
+                    title="View Project"
+                    href="project-meals.html"
+                    >View Project</a
+                  >
+                  <a
+                    class="link"
+                    title="Github Project"
+                    target="_blank"
+                    href="https://github.com/megbort/meals-on-wheels-RESTfulAPI"
+                    >GitHub<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-up-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- weatherapp  -->
+            <div class="card">
+              <img src="assets/weather-sample.jpg" alt="wearit_graphic" />
+              <div class="card-content">
+                <p><strong>Weather App</strong></p>
+                <p class="card-description">
+                  Search by location to find your current weather.
+                </p>
+                <div class="card-links">
+                  <a
+                    class="button"
+                    title="View Project"
+                    href="project-weather.html"
+                    >View Project</a
+                  >
+                  <a
+                    class="link"
+                    title="Github Project"
+                    target="_blank"
+                    href="https://github.com/megbort/weather-app"
+                    >GitHub<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-up-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- ABOUT  -->
-      <section class="about">
-        <div>
-          <img
-            style="width: 100px"
-            src="assets/megan-profile.png"
-            alt="Megan Profile Picture"
-          />
-        </div>
-        <div>
-          <h2>About Me</h2>
-          <p>
-            Megan Krenbrink is a recent graduate of the New Media Design and Web
-            Development program at BCIT, obtaining her diploma in the summer
-            2022. She is now is working at Maximizer CRM Software as a Junior
-            Front-End Developer.
-          </p>
-          <button>Read More</button>
+      <section class="about-section">
+        <div class="about">
+          <div>
+            <img src="assets/megan-profile.png" alt="megan_profile_picture" />
+          </div>
+          <div>
+            <h2>About Me</h2>
+            <p>
+              Megan Krenbrink is a recent graduate of the New Media Design and
+              Web Development program at BCIT, obtaining her diploma in Summer,
+              2022. She is now is working at Maximizer CRM Software as a Junior
+              Front-End Developer.
+            </p>
+            <div id="bioMoreContent">
+              <p>
+                Megan grew up on the West Coast of Canada in Victoria, British
+                Columbia. In 2013, she decided to move to Vancouver, British
+                Columbia to attend the Financial Management Program at BCIT. She
+                graduated in 2015 and received a Diploma in Technology. She then
+                worked for 5 years at a digital solutions company before
+                returning to school in 2021.
+              </p>
+              <p>
+                The experience from both programs has allowed Megan to develop
+                exceptional skills in problem-solving, organization, and
+                communication. She also is proficient in coding languages and
+                tools such as HTML, CSS, JavaScript, Typescript, Angular, React
+                and more.
+              </p>
+              <p>
+                Megan has a passion for music and has been playing drums for 18
+                years. In her spare time likes to play and record music with her
+                band
+                <a
+                  class="link"
+                  href="https://joeychaos.com/"
+                  target="_blank"
+                  title="Joey_Chaos_Homepage"
+                  >Joey Chaos and the Ghosts</a
+                >. Also in her free time, Megan enjoys drawing, reading, and
+                playing video games.
+              </p>
+            </div>
+            <a class="button" title="Read More" id="bioShowMore">Read More</a>
+          </div>
         </div>
       </section>
 
       <!-- CONTACT -->
-      <section class="contact">
-        <div>
+      <section class="contact-section">
+        <div class="contact">
           <h2>Contact</h2>
           <p>Have any questions? Feel free to reach out.</p>
           <div class="socials">
-            <ul>
+            <ul style="justify-content: center; padding-top: 20px">
               <li>
                 <a
-                  ><img
-                    src="assets/linkedin.svg"
+                  href="https://www.linkedin.com/in/megankrenbrink-developer/"
+                  target="_blank"
+                  title="LinkedIn"
+                >
+                  <svg
                     alt="linkedin_icon"
-                    title="LinkedIn"
-                /></a>
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-linkedin"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                    />
+                  </svg>
+                </a>
               </li>
               <li>
                 <a
-                  ><img
-                    src="assets/github.svg"
+                  target="_blank"
+                  href="https://github.com/megbort"
+                  title="GitHub"
+                >
+                  <svg
                     alt="github_icon"
-                    title="Github"
-                /></a>
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                    />
+                  </svg>
+                </a>
               </li>
               <li>
-                <a
-                  ><img
-                    src="assets/envelope-circle.svg"
+                <a href="mailto:megan.krenn@gmail.com" title="E-mail">
+                  <svg
                     alt="email_icon"
-                    title="E-mail"
-                /></a>
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-envelope-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+                    />
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
@@ -144,5 +389,14 @@
     <footer>
       <h4>Designed and built by Megan Krenbrink &copy; 2023</h4>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $("#bioShowMore").click(function () {
+        $("#bioMoreContent").slideToggle("slow");
+        $(this).text(function (i, v) {
+          return v === "Read Less" ? "Read More" : "Read Less";
+        });
+      });
+    </script>
   </body>
 </html>

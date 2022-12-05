@@ -1,6 +1,6 @@
-/*******************
+/*************************
   Reset
-*******************/
+*************************/
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -37,12 +37,12 @@ img {
   height: auto;
 }
 
-/*******************
+/*************************
   Design System
-*******************/
+*************************/
 body {
   background: #050505;
-  color: #E8E8E8;
+  color: #e8e8e8;
   line-height: 1.5;
 }
 
@@ -52,40 +52,21 @@ nav {
   align-items: center;
   padding: 50px;
 }
-
-.socials ul {
-  display: flex;
-}
-.socials li {
-  padding: 0 10px;
-}
-.socials img {
-  width: 40px;
-}
-.socials:hover {
-  cursor: pointer;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-section.header {
-  height: 300px;
-}
-section.work {
-  height: 100%;
-  margin-bottom: 100px;
+@media (max-width: 800px) {
+  nav {
+    padding: 30px 20px;
+  }
 }
 
 h1 {
   font-family: "Overpass Mono", Helvetica, sans-serif;
   font-size: 50px;
   font-weight: 900;
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 40px;
+  }
 }
 
 h2 {
@@ -106,33 +87,134 @@ h4 {
 
 p {
   font-family: Overpass, Helvetica, sans-serif;
+  padding-bottom: 10px;
 }
 
-button {
+a.button {
   font-family: "Overpass Mono", Helvetica, sans-serif;
-  color: #E8E8E8;
-  background: #FF3358;
-  border: 2px solid #FF3358;
-  padding: 5px 20px;
+  color: #e8e8e8;
+  background: #ff3358;
+  border: 2px solid #ff3358;
+  padding: 5px 15px;
+  font-size: 14px;
+  border-radius: 2px;
+  text-decoration: none;
 }
-button:hover {
+a.button:hover {
   cursor: pointer;
-  color: #FF3358;
+  color: #ff3358;
   background: transparent;
 }
 
-footer {
-  background: #FF3358;
-  text-align: center;
-  padding: 10px 0;
+a.link {
+  color: #ff3358;
+  font-family: Overpass, Helvetica, sans-serif;
+  text-decoration: none;
+}
+a.link:hover {
+  text-decoration: underline;
 }
 
-/*******************
+.socials ul {
+  display: flex;
+}
+.socials li {
+  padding: 0 10px;
+}
+.socials a {
+  color: #e8e8e8;
+  text-decoration: none;
+}
+.socials svg {
+  width: 35px;
+  height: 35px;
+}
+.socials svg:hover {
+  cursor: pointer;
+  color: #ff3358;
+}
+
+svg {
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  background: #ff3358;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/************************* 
   Homepage
-*******************/
+*************************/
+section.header-section {
+  margin-bottom: 150px;
+}
+section.work-section {
+  margin-bottom: 100px;
+}
+section.about-section {
+  padding: 200px 0;
+  background-color: #0f0f0f;
+}
+section.contact-section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.header,
+.work,
+.about,
+.contact {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (max-width: 1200px) {
+  .header,
+.work,
+.about,
+.contact {
+    padding: 0 120px;
+  }
+}
+@media (max-width: 525px) {
+  .header,
+.work,
+.about,
+.contact {
+    padding: 0 20px;
+  }
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+}
+@media (max-width: 800px) {
+  .about {
+    flex-direction: column-reverse;
+    padding: 50px;
+  }
+}
+.about > * {
+  flex-basis: 50%;
+}
+.about img {
+  width: 350px;
+  padding: 20px;
+}
+@media (max-width: 800px) {
+  .about img {
+    padding-top: 50px;
+  }
+}
+
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
 }
 
@@ -150,19 +232,40 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #0F0F0F;
-  border-radius: 10px;
+  background: #0f0f0f;
+  border-radius: 4px;
   transition: 0.3s;
-  width: 260px;
-  height: 280px;
   margin: 12px;
 }
 .card:hover {
-  box-shadow: 0px 0px 7px 2px rgba(255, 51, 88, 0.8);
+  box-shadow: 0px 0px 5px 2px #ff3358;
+}
+.card .card-content {
+  padding: 18px;
+}
+.card img {
+  border-radius: 4px 4px 0 0;
+}
+.card .card-description {
+  font-size: 14px;
+}
+.card svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+}
+.card .card-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/*******************
+#bioMoreContent {
+  display: none;
+}
+
+/*************************
   Project page
-*******************/
+*************************/
 
-
+/*# sourceMappingURL=main.css.map */

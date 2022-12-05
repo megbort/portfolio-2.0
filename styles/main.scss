@@ -1,6 +1,6 @@
-/*******************
+/*************************
   Reset
-*******************/
+*************************/
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -37,26 +37,38 @@ img {
   height: auto;
 }
 
-/*******************
+/*************************
   Design System
-*******************/
+*************************/
 $font-mono: "Overpass Mono", Helvetica, sans-serif;
-$font-serif: Overpass, Helvetica, sans-serif;
-$primary: #FF3358;
+$font-sans: Overpass, Helvetica, sans-serif;
+$primary: #ff3358;
 $black: #050505;
-$white: #E8E8E8;
-$grey: #0F0F0F;
+$white: #e8e8e8;
+$grey: #0f0f0f;
 
 @mixin button-primary {
   font-family: $font-mono;
   color: $white;
   background: $primary;
   border: 2px solid $primary;
-  padding: 5px 20px;
+  padding: 5px 15px;
+  font-size: 14px;
+  border-radius: 2px;
+  text-decoration: none;
   &:hover {
     cursor: pointer;
     color: $primary;
     background: transparent;
+  }
+}
+
+@mixin link-primary {
+  color: $primary;
+  font-family: $font-sans;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
   }
 }
 
@@ -71,38 +83,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 50px;
-}
-
-.socials {
-  ul {
-    display: flex;
-  }
-  li {
-    padding: 0 10px;
-  }
-  img {
-    width: 40px;
-  }
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-section {
-  &.header {
-    height: 300px;
-  }
-  &.work {
-    height: 100%;
-    margin-bottom: 100px;
+  @media (max-width: 800px) {
+    padding: 30px 20px;
   }
 }
 
@@ -110,6 +92,9 @@ h1 {
   font-family: $font-mono;
   font-size: 50px;
   font-weight: 900;
+  @media (max-width: 800px) {
+    font-size: 40px;
+  }
 }
 
 h2 {
@@ -119,7 +104,7 @@ h2 {
 }
 
 h3 {
-  font-family: $font-serif;
+  font-family: $font-sans;
   font-size: 22px;
 }
 
@@ -129,25 +114,108 @@ h4 {
 }
 
 p {
-  font-family: $font-serif;
+  font-family: $font-sans;
+  padding-bottom: 10px;
 }
 
-button {
+a.button {
   @include button-primary;
+}
+
+a.link {
+  @include link-primary;
+}
+
+.socials {
+  ul {
+    display: flex;
+  }
+  li {
+    padding: 0 10px;
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+  svg {
+    width: 35px;
+    height: 35px;
+    &:hover {
+      cursor: pointer;
+      color: $primary;
+    }
+  }
+}
+
+svg {
+  width: 50px;
+  height: 50px;
 }
 
 footer {
   background: $primary;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 20px;
 }
 
-/*******************
+/************************* 
   Homepage
-*******************/
+*************************/
+section {
+  &.header-section {
+    margin-bottom: 150px;
+  }
+  &.work-section {
+    margin-bottom: 100px;
+  }
+  &.about-section {
+    padding: 200px 0;
+    background-color: $grey;
+  }
+  &.contact-section {
+    padding: 100px 0;
+    text-align: center;
+  }
+}
+
+.header,
+.work,
+.about,
+.contact {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media (max-width: 1200px) {
+    padding: 0 120px;
+  }
+  @media (max-width: 525px) {
+    padding: 0 20px;
+  }
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
+    padding: 50px;
+  }
+  > * {
+    flex-basis: 50%;
+  }
+  img {
+    width: 350px;
+    padding: 20px;
+    @media (max-width: 800px) {
+      padding-top: 50px;
+    }
+  }
+}
+
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
 }
 @media (max-width: 1200px) {
@@ -166,16 +234,37 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   background: $grey;
-  border-radius: 10px;
+  border-radius: 4px;
   transition: 0.3s;
-  width: 260px;
-  height: 280px;
   margin: 12px;
   &:hover {
-    box-shadow: 0px 0px 7px 2px rgba(255, 51, 88, 0.8);
+    box-shadow: 0px 0px 5px 2px $primary;
+  }
+  .card-content {
+    padding: 18px;
+  }
+  img {
+    border-radius: 4px 4px 0 0;
+  }
+  .card-description {
+    font-size: 14px;
+  }
+  svg {
+    width: 16px;
+    height: 16px;
+    margin-left: 6px;
+  }
+  .card-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
-/*******************
+#bioMoreContent {
+  display: none;
+}
+
+/*************************
   Project page
-*******************/
+*************************/
