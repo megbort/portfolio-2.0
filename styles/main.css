@@ -82,12 +82,23 @@ h3 {
 
 h4 {
   font-family: "Overpass Mono", Helvetica, sans-serif;
+  font-size: 24px;
+  padding-bottom: 5px;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: "Overpass Mono", Helvetica, sans-serif;
   font-size: 14px;
 }
 
 p {
   font-family: Overpass, Helvetica, sans-serif;
   padding-bottom: 10px;
+}
+
+p em {
+  color: #888888;
 }
 
 a.button {
@@ -126,17 +137,25 @@ a.link:hover {
   text-decoration: none;
 }
 .socials svg {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 .socials svg:hover {
   cursor: pointer;
   color: #ff3358;
 }
 
-svg {
+.logo svg {
   width: 50px;
   height: 50px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-50 {
+  flex-basis: 50%;
 }
 
 footer {
@@ -267,5 +286,79 @@ section.contact-section {
 /*************************
   Project page
 *************************/
+.back a {
+  color: #e8e8e8;
+  text-decoration: none;
+}
+.back svg {
+  width: 50px;
+  height: 50px;
+}
+.back svg:hover {
+  cursor: pointer;
+  color: #ff3358;
+}
+
+.project-header {
+  text-align: center;
+}
+.project-header svg {
+  margin-left: 6px;
+}
+
+.project-container {
+  background: #0f0f0f;
+}
+
+.project-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px;
+}
+.project-content > * {
+  padding-bottom: 200px;
+  display: flex;
+  align-items: center;
+}
+.project-content > * > * {
+  flex-basis: 50%;
+  margin: 0 20px;
+}
+.project-content img {
+  width: 300px;
+  border-radius: 20px;
+}
+@media (max-width: 800px) {
+  .project-content > * {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .project-content .col-reverse {
+    flex-direction: column-reverse;
+  }
+  .project-content p, .project-content ul {
+    padding-bottom: 40px;
+    text-align: left;
+  }
+  .project-content img {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .project-content {
+    padding: 40px;
+  }
+  .project-content img {
+    width: 90%;
+  }
+}
+
+.technologies ul {
+  list-style: square;
+}
+.technologies li {
+  font-family: Overpass, Helvetica, sans-serif;
+  margin-left: 15px;
+}
 
 /*# sourceMappingURL=main.css.map */
