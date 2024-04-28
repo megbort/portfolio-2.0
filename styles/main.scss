@@ -40,7 +40,7 @@ img {
 /*************************
   Design System
 *************************/
-$font-mono: "Overpass Mono", Helvetica, sans-serif;
+$font-mono: 'Overpass Mono', Helvetica, sans-serif;
 $font-sans: Overpass, Helvetica, sans-serif;
 $primary: #ff3358;
 $black: #050505;
@@ -125,7 +125,8 @@ p {
   padding-bottom: 10px;
 }
 
-p em {
+p em,
+.text-comment {
   color: $lightgrey;
 }
 
@@ -182,7 +183,7 @@ footer {
 *************************/
 section {
   &.header-section {
-    margin-bottom: 150px;
+    margin-bottom: 130px;
   }
   &.work-section {
     margin-bottom: 100px;
@@ -256,9 +257,8 @@ section {
   border-radius: 4px;
   transition: 0.3s;
   margin: 12px;
-  &:hover {
-    box-shadow: 0px 0px 5px 2px $primary;
-  }
+  box-shadow: 0px 0px 4px 2px $primary;
+
   .card-content {
     padding: 18px;
   }
@@ -273,10 +273,13 @@ section {
     height: 16px;
     margin-left: 6px;
   }
+
   .card-links {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    a.button {
+      text-align: center;
+      width: 100%;
+    }
   }
 }
 
@@ -338,7 +341,8 @@ section {
     .col-reverse {
       flex-direction: column-reverse;
     }
-    p, ul {
+    p,
+    ul {
       padding-bottom: 40px;
       text-align: left;
     }
@@ -351,7 +355,7 @@ section {
     img {
       width: 90%;
     }
-  } 
+  }
 }
 
 .technologies {

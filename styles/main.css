@@ -97,7 +97,8 @@ p {
   padding-bottom: 10px;
 }
 
-p em {
+p em,
+.text-comment {
   color: #888888;
 }
 
@@ -168,7 +169,7 @@ footer {
   Homepage
 *************************/
 section.header-section {
-  margin-bottom: 150px;
+  margin-bottom: 130px;
 }
 section.work-section {
   margin-bottom: 100px;
@@ -192,17 +193,17 @@ section.contact-section {
 }
 @media (max-width: 1200px) {
   .header,
-.work,
-.about,
-.contact {
+  .work,
+  .about,
+  .contact {
     padding: 0 120px;
   }
 }
 @media (max-width: 525px) {
   .header,
-.work,
-.about,
-.contact {
+  .work,
+  .about,
+  .contact {
     padding: 0 20px;
   }
 }
@@ -255,9 +256,7 @@ section.contact-section {
   border-radius: 4px;
   transition: 0.3s;
   margin: 12px;
-}
-.card:hover {
-  box-shadow: 0px 0px 5px 2px #ff3358;
+  box-shadow: 0px 0px 4px 2px #ff3358;
 }
 .card .card-content {
   padding: 18px;
@@ -275,8 +274,10 @@ section.contact-section {
 }
 .card .card-links {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+.card .card-links a.button {
+  text-align: center;
+  width: 100%;
 }
 
 #bioMoreContent {
@@ -336,7 +337,8 @@ section.contact-section {
   .project-content .col-reverse {
     flex-direction: column-reverse;
   }
-  .project-content p, .project-content ul {
+  .project-content p,
+  .project-content ul {
     padding-bottom: 40px;
     text-align: left;
   }
