@@ -42,7 +42,7 @@ img {
 *************************/
 $font-mono: 'Overpass Mono', Helvetica, sans-serif;
 $font-sans: Overpass, Helvetica, sans-serif;
-$primary: #ff3358;
+$primary: #ea1e43;
 $primary-dark: #681726;
 $black: #050505;
 $white: #e8e8e8;
@@ -212,7 +212,7 @@ section {
     background-color: $grey;
   }
   &.contact-section {
-    padding: 100px 0;
+    padding: 80px 0;
     text-align: center;
   }
 }

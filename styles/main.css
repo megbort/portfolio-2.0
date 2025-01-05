@@ -106,8 +106,8 @@ p em,
 a.button {
   font-family: "Overpass Mono", Helvetica, sans-serif;
   color: #e8e8e8;
-  background: #ff3358;
-  border: 2px solid #ff3358;
+  background: #ea1e43;
+  border: 2px solid #ea1e43;
   padding: 5px 15px;
   font-size: 14px;
   border-radius: 2px;
@@ -115,12 +115,12 @@ a.button {
 }
 a.button:hover {
   cursor: pointer;
-  color: #ff3358;
+  color: #ea1e43;
   background: transparent;
 }
 
 a.link {
-  color: #ff3358;
+  color: #ea1e43;
   font-family: Overpass, Helvetica, sans-serif;
   text-decoration: none;
 }
@@ -130,9 +130,9 @@ a.link:hover {
 
 .button-secondary {
   font-family: "Overpass Mono", Helvetica, sans-serif;
-  color: #ff3358;
+  color: #ea1e43;
   background: transparent;
-  border: 2px solid #ff3358;
+  border: 2px solid #ea1e43;
   padding: 5px 15px;
   font-size: 18px;
   border-radius: 2px;
@@ -159,7 +159,7 @@ a.link:hover {
 }
 .socials svg:hover {
   cursor: pointer;
-  color: #ff3358;
+  color: #ea1e43;
 }
 
 .logo svg {
@@ -176,7 +176,7 @@ a.link:hover {
 }
 
 footer {
-  background: #ff3358;
+  background: #ea1e43;
   text-align: center;
   padding: 10px 20px;
 }
@@ -192,7 +192,7 @@ section.about-section {
   background-color: #0f0f0f;
 }
 section.contact-section {
-  padding: 100px 0;
+  padding: 80px 0;
   text-align: center;
 }
 
@@ -270,7 +270,7 @@ a.card {
   border-radius: 4px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   margin: 12px;
-  box-shadow: 0px 0px 4px 2px #ff3358;
+  box-shadow: 0px 0px 4px 2px #ea1e43;
 }
 a.card .card-image {
   position: relative;
@@ -308,7 +308,7 @@ a.card .card-description {
 }
 a.card:hover:not(.disabled) {
   cursor: pointer;
-  box-shadow: 0px 0px 8px 4px #ff3358;
+  box-shadow: 0px 0px 8px 4px #ea1e43;
   transform: translateY(-5px);
 }
 a.card:hover:not(.disabled) .card-image .overlay {
@@ -332,7 +332,7 @@ a.card:hover:not(.disabled) .card-image .overlay {
 }
 .back svg:hover {
   cursor: pointer;
-  color: #ff3358;
+  color: #ea1e43;
 }
 
 .project-header {
