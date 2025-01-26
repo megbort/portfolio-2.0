@@ -218,7 +218,6 @@ footer {
   grid-gap: 5px;
 }
 .work .card-grid .card {
-  max-width: 400px;
   text-decoration: none;
   color: #e8e8e8;
   background: #1b1b1b;
@@ -256,11 +255,6 @@ footer {
 }
 .work .card-grid .card:hover:not(.disabled) .card-image .overlay {
   opacity: 1;
-}
-@media (max-width: 1200px) {
-  .work .card-grid {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 @media (max-width: 800px) {
   .work .card-grid {
