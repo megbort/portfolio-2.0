@@ -163,7 +163,7 @@ a.link:hover {
 
 footer {
   background: #ea1e43;
-  padding: 1rem;
+  padding: 0.75rem;
 }
 
 /************************* 
@@ -274,6 +274,9 @@ section.about-section {
 }
 section.about-section .about > div {
   flex: 1;
+}
+section.about-section .about .bio p {
+  padding: 0.5rem 0;
 }
 section.about-section .about #bioMoreContent {
   display: none;

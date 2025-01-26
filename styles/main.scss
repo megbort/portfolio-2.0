@@ -195,7 +195,7 @@ a.link {
 
 footer {
   background: $primary;
-  padding: 1rem;
+  padding: 0.75rem;
 }
 
 /************************* 
@@ -308,6 +308,9 @@ section.about-section {
   .about {
     > div {
       flex: 1;
+    }
+    .bio p {
+      padding: 0.5rem 0;
     }
     #bioMoreContent {
       display: none;
