@@ -218,6 +218,7 @@ footer {
   grid-gap: 5px;
 }
 .work .card-grid .card {
+  max-width: 400px;
   text-decoration: none;
   color: #e8e8e8;
   background: #1b1b1b;
