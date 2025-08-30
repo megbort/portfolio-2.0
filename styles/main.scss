@@ -42,8 +42,8 @@ img {
 *************************/
 $font-mono: 'Overpass Mono', Helvetica, sans-serif;
 $font-sans: Overpass, Helvetica, sans-serif;
-$primary: #ea1e43;
-$primary-dark: #681726;
+$primary: #ba6735;
+$primary-dark: #6e4127;
 $black: #050505;
 $white: #e8e8e8;
 $grey: #1b1b1b;
@@ -110,8 +110,25 @@ $lightgrey: #888888;
 
 body {
   background: $black;
+  background-image: url('../assets/images/sunset-water.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: $white;
   line-height: 1.5;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
 }
 
 nav {
@@ -327,6 +344,10 @@ section.about-section {
       padding: 50px;
     }
   }
+}
+
+section.contact-section {
+  background-color: $black;
 }
 
 /*************************
