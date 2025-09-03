@@ -5,6 +5,9 @@ This portfolio is built on the same core concepts and code I used when I first s
 Visit the live site at [megankrenbrink.com](https://megankrenbrink.com)
 
 — Megan Krenbrink
+<br>
+
+---
 
 ## Getting Started
 
@@ -41,16 +44,13 @@ sass --watch styles/main.scss:styles/main.css
 
 ```
 portfolio-2.0/
-├── index.html              # Homepage
-├── project-*.html         # Project detail pages
+├── index.html            # Homepage
+├── project-*.html        # Project detail pages
 ├── assets/
 │   ├── images/           # Photos, graphics, backgrounds
 │   └── icons/            # SVG icon sprites
 ├── styles/
-│   ├── main.scss        # Source styles (edit this)
-│   ├── main.css         # Compiled CSS (auto-generated)
-│   └── main.css.map     # Source map
-└── .github/
-    └── instructions/
-        └── copilot.instructions.md  # AI assistant context
+│   ├── main.scss         # Source styles (edit this)
+│   ├── main.css          # Compiled CSS (auto-generated)
+│   └── main.css.map      # Source map
 ```
