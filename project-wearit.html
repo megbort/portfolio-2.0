@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-CA">
   <head>
     <meta charset="UTF-8" />
@@ -82,31 +82,43 @@
       <section>
         <div class="project-header text-center">
           <h2>WearIt</h2>
-          <div class="button-group flex justify-center flex-direction">
-            <a
-              class="button-secondary"
-              title="Github Project"
-              target="_blank"
-              href="https://github.com/megbort/wearit-2.0"
-              rel="noopener"
-              >GitHub</a
-            >
-            <a
-              class="button-secondary"
-              title="View Demo"
-              target="_blank"
-              href="https://wearit.megankrenbrink.com"
-              rel="noopener"
-              >Demo</a
-            >
-            <a
-              class="button-secondary"
-              title="View Designs"
-              target="_blank"
-              href="https://www.figma.com/design/1sVXFrMubE64ZST67lWAsM/WearIt?node-id=301-2&t=SXvZhqxXe6eJrlyv-1"
-              rel="noopener"
-              >Designs</a
-            >
+          <div class="button-group flex flex-col justify-center flex-direction">
+            <div>
+              <a
+                class="button-secondary"
+                title="Github Project"
+                target="_blank"
+                href="https://github.com/megbort/wearit-2.0"
+                rel="noopener"
+                >Code (Frontend)</a
+              >
+              <a
+                class="button-secondary"
+                title="Github Project"
+                target="_blank"
+                href="https://github.com/megbort/wearit-backend"
+                rel="noopener"
+                >Code (Backend)</a
+              >
+            </div>
+            <div>
+              <a
+                class="button-secondary"
+                title="View Demo"
+                target="_blank"
+                href="https://wearit.megankrenbrink.com"
+                rel="noopener"
+                >Demo</a
+              >
+              <a
+                class="button-secondary"
+                title="View Designs"
+                target="_blank"
+                href="https://www.figma.com/design/1sVXFrMubE64ZST67lWAsM/WearIt?node-id=301-2&t=SXvZhqxXe6eJrlyv-1"
+                rel="noopener"
+                >Designs</a
+              >
+            </div>
           </div>
           <ul class="project-plans">
             <p><em>Upcoming Project Plans:</em></p>
@@ -129,8 +141,8 @@
           <div class="flex items-center flex-direction">
             <div class="description flex flex-col basis-50">
               <p>
-                Welcome to WearIt—an urban clothing retailer concept built with
-                Next.js.
+                Welcome to WearIt, an urban clothing retailer concept built with
+                React and Next.js.
               </p>
               <p>
                 This is the second iteration of the project, initially created
@@ -148,18 +160,33 @@
           <div class="flex items-center flex-direction">
             <div class="technologies basis-50">
               <h4>Technologies & Resources</h4>
-              <ul>
-                <li>Next.js</li>
-                <li>Storybook</li>
-                <li>Figma</li>
-                <li>Font Awesome</li>
-                <li>Tailwind CSS</li>
-                <li>Material UI</li>
-                <li>Zustand</li>
-                <li>Slick Slider</li>
-                <li>Uptime Robot</li>
-                <li>Unsplash & Freepik</li>
-              </ul>
+              <div class="tech-split">
+                <div class="tech-column">
+                  <h5>Frontend</h5>
+                  <ul>
+                    <li>React</li>
+                    <li>Next.js</li>
+                    <li>Storybook</li>
+                    <li>Tailwind CSS</li>
+                    <li>Material UI</li>
+                    <li>Zustand</li>
+                    <li>Slick Slider</li>
+                    <li>Font Awesome</li>
+                    <li>Unsplash & Freepik</li>
+                  </ul>
+                </div>
+                <div class="tech-column">
+                  <h5>Backend</h5>
+                  <ul>
+                    <li>Node.js</li>
+                    <li>Apollo Server</li>
+                    <li>GraphQL</li>
+                    <li>MongoDB</li>
+                    <li>Mongoose</li>
+                    <li>JWT</li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div class="basis-50">
               <img

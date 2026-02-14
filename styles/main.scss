@@ -42,7 +42,7 @@ img {
 *************************/
 $font-mono: 'Overpass Mono', Helvetica, sans-serif;
 $font-sans: Overpass, Helvetica, sans-serif;
-$primary: #ba6735;
+$primary: #ca7c4b;
 $primary-dark: #6e4127;
 $black: #050505;
 $white: #e8e8e8;
@@ -71,7 +71,7 @@ $lightgrey: #888888;
 @mixin button-secondary {
   font-family: $font-mono;
   color: $primary;
-  background: transparent;
+  background: var(--button-secondary-bg, transparent);
   border: 2px solid $primary;
   padding: 5px 15px;
   font-size: 18px;
@@ -264,14 +264,16 @@ footer {
   }
   .card-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
     .card {
       text-decoration: none;
       color: $white;
       background: $grey;
       border-radius: 4px;
-      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      transition:
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
       margin: 12px;
       box-shadow: 0px 0px 4px 2px $primary;
       .card-image {
@@ -383,6 +385,16 @@ section.project-section {
     }
     .technologies {
       padding-left: 3rem;
+      .tech-split {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+      .tech-column {
+        flex: 1;
+        min-width: 220px;
+        padding-top: 4px;
+      }
       ul {
         list-style: square;
       }

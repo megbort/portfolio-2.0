@@ -124,8 +124,8 @@ a.button,
 button {
   font-family: "Overpass Mono", Helvetica, sans-serif;
   color: #e8e8e8;
-  background: #ba6735;
-  border: 2px solid #ba6735;
+  background: #ca7c4b;
+  border: 2px solid #ca7c4b;
   padding: 5px 15px;
   font-size: 14px;
   border-radius: 2px;
@@ -134,12 +134,12 @@ button {
 a.button:hover,
 button:hover {
   cursor: pointer;
-  color: #ba6735;
+  color: #ca7c4b;
   background: transparent;
 }
 
 a.link {
-  color: #ba6735;
+  color: #ca7c4b;
   font-family: Overpass, Helvetica, sans-serif;
   text-decoration: none;
 }
@@ -149,9 +149,9 @@ a.link:hover {
 
 .button-secondary {
   font-family: "Overpass Mono", Helvetica, sans-serif;
-  color: #ba6735;
-  background: transparent;
-  border: 2px solid #ba6735;
+  color: #ca7c4b;
+  background: var(--button-secondary-bg, transparent);
+  border: 2px solid #ca7c4b;
   padding: 5px 15px;
   font-size: 18px;
   border-radius: 2px;
@@ -174,11 +174,11 @@ a.link:hover {
 }
 .icon:hover {
   cursor: pointer;
-  fill: #ba6735;
+  fill: #ca7c4b;
 }
 
 footer {
-  background: #ba6735;
+  background: #ca7c4b;
   padding: 0.75rem;
 }
 
@@ -230,7 +230,7 @@ footer {
 }
 .work .card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
 }
 .work .card-grid .card {
@@ -240,7 +240,7 @@ footer {
   border-radius: 4px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   margin: 12px;
-  box-shadow: 0px 0px 4px 2px #ba6735;
+  box-shadow: 0px 0px 4px 2px #ca7c4b;
 }
 .work .card-grid .card .card-image {
   position: relative;
@@ -266,7 +266,7 @@ footer {
 }
 .work .card-grid .card:hover:not(.disabled) {
   cursor: pointer;
-  box-shadow: 0px 0px 8px 4px #ba6735;
+  box-shadow: 0px 0px 8px 4px #ca7c4b;
   transform: translateY(-5px);
 }
 .work .card-grid .card:hover:not(.disabled) .card-image .overlay {
@@ -352,6 +352,16 @@ section.project-section .project .description {
 }
 section.project-section .project .technologies {
   padding-left: 3rem;
+}
+section.project-section .project .technologies .tech-split {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+section.project-section .project .technologies .tech-column {
+  flex: 1;
+  min-width: 220px;
+  padding-top: 4px;
 }
 section.project-section .project .technologies ul {
   list-style: square;
