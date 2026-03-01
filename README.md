@@ -7,31 +7,6 @@ Visit the live site at [megankrenbrink.com](https://megankrenbrink.com)
 — Megan Krenbrink
 <br>
 
----
-
-## Getting Started
-
-### Prerequisites
-
-- [Sass/SCSS](https://sass-lang.com/install) for stylesheet compilation
-
-### Development Setup
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/megbort/portfolio-2.0.git
-cd portfolio-2.0
-```
-
-2. Start the Sass watcher for automatic CSS compilation
-
-```bash
-sass --watch styles/main.scss:styles/main.css
-```
-
-3. Open `index.html` in your browser or use a local live server
-
 ## Tech Stack
 
 - **Frontend**: HTML5, CSS3, SCSS (Sass)
