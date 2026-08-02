@@ -96,30 +96,30 @@
       <section>
         <div class="work section-padding page-max-width">
           <h2>Check out some of my work &darr;&darr;&darr;</h2>
-          <p class="comment">
+          <p class="work__comment">
             <em>
               // Projects are updated on an ongoing basis. Check out the
               upcoming plans for each project on the details page</em
             >
           </p>
-          <div class="card-grid">
+          <div class="work__grid">
             <a
               class="card flex flex-col"
               href="project-catspace.html"
               aria-label="View Catspace project"
             >
-              <div class="card-image">
+              <div class="card__image">
                 <img
                   src="assets/images/catspace-graphic.jpg"
                   alt="Catspace project logo"
                 />
-                <div class="overlay flex justify-center align-center">
+                <div class="card__overlay flex justify-center align-center">
                   <p class="flex items-center">View Project</p>
                 </div>
               </div>
-              <div class="card-content">
+              <div class="card__content">
                 <p><strong>Catspace</strong></p>
-                <p class="card-description">
+                <p class="card__description">
                   Playful social platform for cat lovers and creators
                 </p>
               </div>
@@ -129,18 +129,18 @@
               href="project-wearit.html"
               aria-label="View WearIt project"
             >
-              <div class="card-image">
+              <div class="card__image">
                 <img
                   src="assets/images/wearit-graphic.jpg"
                   alt="WearIt project logo"
                 />
-                <div class="overlay flex justify-center align-center">
+                <div class="card__overlay flex justify-center align-center">
                   <p class="flex items-center">View Project</p>
                 </div>
               </div>
-              <div class="card-content">
+              <div class="card__content">
                 <p><strong>WearIt</strong></p>
-                <p class="card-description">
+                <p class="card__description">
                   Modern e-commerce storefront concept
                 </p>
               </div>
@@ -150,18 +150,18 @@
               href="project-memobook.html"
               aria-label="View MemoBook project"
             >
-              <div class="card-image">
+              <div class="card__image">
                 <img
                   src="assets/images/memobook-graphic.jpg"
                   alt="MemoBook project logo"
                 />
-                <div class="overlay flex justify-center align-center">
+                <div class="card__overlay flex justify-center align-center">
                   <p class="flex items-center">View Project</p>
                 </div>
               </div>
-              <div class="card-content">
+              <div class="card__content">
                 <p><strong>MemoBook</strong></p>
-                <p class="card-description">
+                <p class="card__description">
                   Multimedia address book for photos and events
                 </p>
               </div>
@@ -171,18 +171,18 @@
               href="project-storymixer.html"
               aria-label="View StoryMixer project"
             >
-              <div class="card-image">
+              <div class="card__image">
                 <img
                   src="assets/images/storymixer-graphic.jpg"
                   alt="StoryMixer project logo"
                 />
-                <div class="overlay flex justify-center align-center">
+                <div class="card__overlay flex justify-center align-center">
                   <p class="flex items-center">View Project</p>
                 </div>
               </div>
-              <div class="card-content">
+              <div class="card__content">
                 <p><strong>StoryMixer</strong></p>
-                <p class="card-description">
+                <p class="card__description">
                   Quick fill-in-the-blanks story game for laughs
                 </p>
               </div>
@@ -192,15 +192,17 @@
       </section>
 
       <!-- ABOUT  -->
-      <section class="about-section">
-        <div class="about flex items-center section-padding page-max-width">
-          <div>
+      <section class="about">
+        <div
+          class="about__content flex items-center section-padding page-max-width"
+        >
+          <div class="about__image">
             <img
               src="assets/images/megan-profile.png"
               alt="Megan Krenbrink profile"
             />
           </div>
-          <div class="bio">
+          <div class="about__bio">
             <h2>About Me</h2>
             <p>
               Megan Krenbrink is a Software Engineer at Maximizer CRM Software
@@ -208,7 +210,7 @@
               Junior Front-End Developer and was promoted to Software Engineer
               in February 2025.
             </p>
-            <div id="bioMoreContent">
+            <div id="bioMoreContent" class="about__more">
               <p>
                 Megan grew up on the West Coast of Canada in Victoria, British
                 Columbia. In 2013, she decided to move to Vancouver to attend
@@ -245,15 +247,17 @@
                 playing video games.
               </p>
             </div>
-            <button title="Show More" id="bioToggle">Show More</button>
+            <button title="Show More" id="bioToggle" class="about__toggle">
+              Show More
+            </button>
           </div>
         </div>
       </section>
 
       <!-- CONTACT -->
-      <section class="contact-section">
+      <section class="contact">
         <div
-          class="contact flex flex-col items-center text-center section-padding"
+          class="contact__content flex flex-col items-center text-center section-padding"
         >
           <h2>Let's Connect!</h2>
           <ul class="socials flex justify-center">

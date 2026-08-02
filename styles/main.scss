@@ -1,6 +1,4 @@
-/*************************
-  Reset
-*************************/
+/* || Reset */
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -37,9 +35,7 @@ img {
   height: auto;
 }
 
-/*************************
-  Variables 
-*************************/
+/* || Variables */
 $font-mono: 'Overpass Mono', Helvetica, sans-serif;
 $font-sans: Overpass, Helvetica, sans-serif;
 $primary: #ca7c4b;
@@ -49,9 +45,7 @@ $white: #e8e8e8;
 $grey: #1b1b1b;
 $lightgrey: #888888;
 
-/*************************
-  Mixins & Shared 
-*************************/
+/* || Mixins */
 @mixin button-primary {
   font-family: $font-mono;
   color: $white;
@@ -108,37 +102,7 @@ $lightgrey: #888888;
   }
 }
 
-body {
-  background: $black;
-  background-image: url('../assets/images/sunset-water.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: $white;
-  line-height: 1.5;
-  position: relative;
-
-  &::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: -1;
-  }
-}
-
-nav {
-  justify-content: space-between;
-  padding: 50px;
-  @include respond('medium') {
-    padding: 30px 20px;
-  }
-}
-
+/* || General Styles */
 h1 {
   font-family: $font-mono;
   font-size: 3.125rem;
@@ -195,29 +159,7 @@ a.link {
   @include button-secondary();
 }
 
-.socials {
-  gap: 1.5rem;
-  padding-top: 12px;
-}
-
-.icon {
-  width: 28px;
-  height: 28px;
-  fill: $white;
-  &:hover {
-    cursor: pointer;
-    fill: $primary;
-  }
-}
-
-footer {
-  background: $primary;
-  padding: 0.75rem;
-}
-
-/************************* 
-  Utility Classes
-*************************/
+/* || Utility Classes */
 .flex {
   display: flex;
 }
@@ -251,65 +193,120 @@ footer {
   padding: 75px 45px;
 }
 
-/************************* 
-  Homepage
-*************************/
+/* || Sitewide */
+body {
+  background: $black;
+  background-image: url('../assets/images/sunset-water.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: $white;
+  line-height: 1.5;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+}
+
+nav {
+  justify-content: space-between;
+  padding: 50px;
+  @include respond('medium') {
+    padding: 30px 20px;
+  }
+}
+
+.socials {
+  gap: 1.5rem;
+  padding-top: 12px;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  fill: $white;
+  &:hover {
+    cursor: pointer;
+    fill: $primary;
+  }
+}
+
+footer {
+  background: $primary;
+  padding: 0.75rem;
+}
+
+.contact {
+  background-color: $black;
+}
+
+/* || Homepage */
 .hero {
   padding: 45px;
 }
 
+.card {
+  text-decoration: none;
+  color: $white;
+  background: $grey;
+  border-radius: 4px;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+  margin: 12px;
+  box-shadow: 0px 0px 4px 2px $primary;
+  &__image {
+    position: relative;
+    img {
+      border-radius: 4px 4px 0 0;
+      height: auto;
+      display: block;
+    }
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 4px 4px 0 0;
+  }
+  &__content {
+    padding: 1rem;
+  }
+  &:hover:not(.card--disabled) {
+    cursor: pointer;
+    box-shadow: 0px 0px 8px 4px $primary;
+    transform: translateY(-5px);
+    .card__overlay {
+      opacity: 1;
+    }
+  }
+}
+
 .work {
-  .comment {
+  &__comment {
     padding: 8px 0;
   }
-  .card-grid {
+  &__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
-    .card {
-      text-decoration: none;
-      color: $white;
-      background: $grey;
-      border-radius: 4px;
-      transition:
-        box-shadow 0.3s ease,
-        transform 0.3s ease;
-      margin: 12px;
-      box-shadow: 0px 0px 4px 2px $primary;
-      .card-image {
-        position: relative;
-        img {
-          border-radius: 4px 4px 0 0;
-          height: auto;
-          display: block;
-        }
-        .overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.85);
-          opacity: 0;
-          transition: opacity 0.3s ease;
-          border-radius: 4px 4px 0 0;
-        }
-      }
-      .card-content {
-        padding: 1rem;
-      }
-      &:hover:not(.disabled) {
-        cursor: pointer;
-        box-shadow: 0px 0px 8px 4px $primary;
-        transform: translateY(-5px);
-        .card-image .overlay {
-          opacity: 1;
-        }
-      }
-    }
   }
   @include respond('medium') {
-    .card-grid {
+    .work__grid {
       grid-template-columns: 1fr;
       max-width: 450px;
       margin: 0 auto;
@@ -317,53 +314,43 @@ footer {
   }
 }
 
-section.about-section {
+.about {
   background-color: $grey;
-  .about {
+  &__content {
     > div {
       flex: 1;
-    }
-    .bio p {
-      padding: 0.5rem 0;
-    }
-    #bioMoreContent {
-      display: none;
-    }
-    button {
-      margin-top: 1rem;
-    }
-    img {
-      width: 350px;
-      padding: 20px;
-      margin: 0 auto;
-      display: block;
-      @include respond('medium') {
-        padding-top: 50px;
-      }
     }
     @include respond('medium') {
       flex-direction: column-reverse;
       padding: 50px;
     }
   }
+  &__bio p {
+    padding: 0.5rem 0;
+  }
+  &__more {
+    display: none;
+  }
+  &__toggle {
+    margin-top: 1rem;
+  }
+  &__image img {
+    width: 350px;
+    padding: 20px;
+    margin: 0 auto;
+    display: block;
+    @include respond('medium') {
+      padding-top: 50px;
+    }
+  }
 }
 
-section.contact-section {
-  background-color: $black;
-}
-
-/*************************
-  Project pages
-*************************/
+/* || Project Pages */
 .project-header {
-  padding-bottom: 1rem;
-  .button-group {
+  padding-bottom: 3rem;
+  &__actions {
     gap: 1.5rem;
     padding: 1rem;
-  }
-  .project-plans {
-    padding: 1rem;
-    line-height: 1.25;
   }
   @include respond('medium') {
     .flex-direction {
@@ -374,34 +361,10 @@ section.contact-section {
   }
 }
 
-section.project-section {
+.project {
   background: $grey;
-  .project {
+  &__content {
     gap: 2rem;
-    .description {
-      gap: 1rem;
-      padding-left: 3rem;
-      padding-right: 1rem;
-    }
-    .technologies {
-      padding-left: 3rem;
-      .tech-split {
-        display: flex;
-        gap: 2rem;
-        flex-wrap: wrap;
-      }
-      .tech-column {
-        flex: 1;
-        min-width: 220px;
-        padding-top: 4px;
-      }
-      ul {
-        list-style: square;
-      }
-      li {
-        margin-left: 15px;
-      }
-    }
     img {
       padding: 1rem;
       border-radius: 20px;
@@ -409,14 +372,62 @@ section.project-section {
       width: 500px;
     }
     @include respond('medium') {
-      .description,
-      .technologies {
+      .project__description,
+      .project__technologies {
         padding: 0 1rem;
+      }
+      .project__plans {
+        padding: 1rem 1.25rem;
+        margin-left: 0;
+        width: auto;
       }
       .flex-direction {
         flex-direction: column;
         gap: 1rem;
       }
+    }
+  }
+  &__description {
+    gap: 1rem;
+    padding-left: 3rem;
+    padding-right: 1rem;
+  }
+  &__technologies {
+    padding-left: 3rem;
+    ul {
+      list-style: square;
+    }
+    li {
+      margin-left: 15px;
+    }
+  }
+  &__tech-split {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  &__tech-column {
+    flex: 1;
+    min-width: 220px;
+    padding-top: 4px;
+  }
+  &__plans {
+    background: rgba(0, 0, 0, 0.4);
+    border-left: 4px solid $primary;
+    border-radius: 4px;
+    padding: 1.5rem 2rem;
+    margin-left: 3rem;
+    width: calc(100% - 7.125rem);
+    h4 {
+      font-size: 1.125rem;
+      padding-bottom: 0.5rem;
+    }
+    ul {
+      list-style: square;
+    }
+    li {
+      margin-left: 15px;
+      font-size: 0.9375rem;
     }
   }
 }

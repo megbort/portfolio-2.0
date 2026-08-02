@@ -82,7 +82,9 @@
       <section>
         <div class="project-header text-center">
           <h2>WearIt</h2>
-          <div class="button-group flex flex-col justify-center flex-direction">
+          <div
+            class="project-header__actions flex flex-col justify-center flex-direction"
+          >
             <div>
               <a
                 class="button-secondary"
@@ -120,26 +122,24 @@
               >
             </div>
           </div>
-          <ul class="project-plans">
-            <p><em>Upcoming Project Plans:</em></p>
-            <li>
-              <p><em>Implement shopping cart functionality</em></p>
-            </li>
-            <li>
-              <p><em>Integrate existing backend API endpoints</em></p>
-            </li>
-            <li>
-              <p><em>Connect user authentication to backend services</em></p>
-            </li>
-          </ul>
         </div>
       </section>
 
       <!-- PROJECT -->
-      <section class="project-section">
-        <div class="project flex flex-col section-padding page-max-width">
+      <section class="project">
+        <div
+          class="project__content flex flex-col section-padding page-max-width"
+        >
+          <div class="project__plans">
+            <h4>Upcoming Project Plans</h4>
+            <ul>
+              <li>Backend + Frontend Cart functionality</li>
+              <li>Storybook play tests & End-to-End testing</li>
+              <li>More language options</li>
+            </ul>
+          </div>
           <div class="flex items-center flex-direction">
-            <div class="description flex flex-col basis-50">
+            <div class="project__description flex flex-col basis-50">
               <p>
                 Welcome to WearIt, an urban clothing retailer concept built with
                 React and Next.js.
@@ -158,10 +158,10 @@
             </div>
           </div>
           <div class="flex items-center flex-direction">
-            <div class="technologies basis-50">
+            <div class="project__technologies basis-50">
               <h4>Technologies & Resources</h4>
-              <div class="tech-split">
-                <div class="tech-column">
+              <div class="project__tech-split">
+                <div class="project__tech-column">
                   <h5>Frontend</h5>
                   <ul>
                     <li>React</li>
@@ -175,7 +175,7 @@
                     <li>Unsplash & Freepik</li>
                   </ul>
                 </div>
-                <div class="tech-column">
+                <div class="project__tech-column">
                   <h5>Backend</h5>
                   <ul>
                     <li>Node.js</li>
@@ -199,9 +199,9 @@
       </section>
 
       <!-- CONTACT -->
-      <section class="contact-section">
+      <section class="contact">
         <div
-          class="contact flex flex-col items-center text-center section-padding"
+          class="contact__content flex flex-col items-center text-center section-padding"
         >
           <h2>Let's Connect!</h2>
           <ul class="socials flex justify-center">
