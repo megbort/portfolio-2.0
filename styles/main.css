@@ -209,7 +209,12 @@ nav {
 
 footer {
   background: #ca7c4b;
-  padding: 0.75rem;
+  padding: 0.5rem 0.75rem;
+}
+footer .version {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-top: 0.15rem;
 }
 
 .contact {

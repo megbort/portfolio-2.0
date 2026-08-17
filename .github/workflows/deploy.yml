@@ -11,6 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set app version
+        run: |
+          SHORT_SHA="${GITHUB_SHA::7}"
+          sed -i "s/v0 · local/v${{ github.run_number }} · $SHORT_SHA/g" *.html
+
       - name: Deploy over rsync
         uses: easingthemes/ssh-deploy@v6
         with:

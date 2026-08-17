@@ -242,7 +242,13 @@ nav {
 
 footer {
   background: $primary;
-  padding: 0.75rem;
+  padding: 0.5rem 0.75rem;
+
+  .version {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    margin-top: 0.15rem;
+  }
 }
 
 .contact {
