@@ -1,0 +1,10 @@
+{
+  "name": "Megan Krenbrink | Software Engineer",
+  "short_name": "Megan Krenbrink",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/favicon.ico", "sizes": "48x48", "type": "image/x-icon" }
+  ]
+}
